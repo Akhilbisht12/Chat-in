@@ -32,7 +32,12 @@ socket.on('roomUsers', (users)=>{
     </a>`
     userPanel.appendChild(div)
     });
-    
+    const share = document.createElement('a');
+    share.classList.add('btn','bg-dark', 'text-white', 'fixed-bottom');
+    share.setAttribute("href", "whatsapp://send");
+    share.setAttribute('data-text', `Join Me On Chat-in. Room : ${users[0].room}`);
+    share.innerHTML=`Invite To Chat`
+    userPanel.appendChild(share);
 })
 
 socket.on('welcome', (username)=>{
