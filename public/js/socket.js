@@ -41,8 +41,8 @@ socket.on('welcome', (username)=>{
     div.innerHTML = `
     <div class="media-body">
         <div class="bg-dark rounded py-2 px-3 mb-2">
-            <p class="text-small mb-0 text-white">Hello! ${username}. Welcome to Chat-In. Chat-In is an demo chatting app developed by Upgrate.in
-            to customize it as per your requirement <a class'badge badge-success' href='https://www.upgrate.in/contact'>Click Here</a></p>
+            <p class="text-small mb-0 text-white">Hello! ${username}. Welcome to Chat-In. Chat-In is an demo chatting app developed by Upgrate.in,
+            to customize it as per your requirements <a class'badge badge-success' href='https://www.upgrate.in/contact'>Click Here</a></p>
         </div>
     </div>
     `
