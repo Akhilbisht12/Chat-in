@@ -6,17 +6,28 @@
     <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
     <title>Document</title>
 </head>
-<body>
+<body class="bg-dark">
+    <header class="fixed-top mb-5">
+        <nav class="navbar navbar-dark bg-dark">
+            <span class="navbar-brand mb-0 h1">Chat-In</span>
+            <span class="navbar-text">
+                A Product By <a href='https://www.upgrate.in' target='_blank'>Upgrate.in</a>
+            </span>
+        </nav>
+    </header>
     <div class="mt-5">
-        <div class="container bg-dark text-white rounded p-5 mt-5">
-            <form action="/chat" method="get">
+        <div class="container text-white rounded p-5 mt-5">
+            <div class="text-center mb-5">
+            <span class="navbar-brand">Welcome to Chat-In</span>
+            </div>
+            <form action="/chat" method="get" class="mx-sm-5">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Type Your Name</label>
                     <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     <label for="exampleInputEmail1">Type Room Name</label>
                     <input type="text" name="room" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 </div>
-                <button class="btn btn-primary" type="submit">Submit</button>
+                <button class="btn btn-primary" type="submit">Join Chat</button>
             </form>
         </div>
     </div>

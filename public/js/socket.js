@@ -34,8 +34,9 @@ socket.on('roomUsers', (users)=>{
     });
     const share = document.createElement('a');
     share.classList.add('btn','bg-dark', 'text-white', 'fixed-bottom');
-    share.setAttribute("href", `whatsapp://send?text=Join Me On Chat-in. Room : ${users[0].room}
-    <<https://upgrate-chat-in.herokuapp.com>>`);
+    share.setAttribute("href", `whatsapp://send?text=Join Me On Chat-in.
+     Room-Id : ${users[0].room}
+     https://upgrate-chat-in.herokuapp.com`);
     share.setAttribute('data-action', `share/whatsapp/share`);
     share.innerHTML=`Invite To Chat`
     userPanel.appendChild(share);
@@ -90,7 +91,7 @@ socket.on('messageSelf', (message)=>{
     div.classList.add('media', 'w-75', 'ml-auto', 'mb-3');
     div.innerHTML = `
     <div class="media-body">
-        <div class="bg-primary rounded py-2 px-3 mb-2">
+        <div class="bg-dark rounded py-2 px-3 mb-2">
             <p class="text-small mb-0 text-white">${message.msg}</p>
         </div>
         <p class="small text-muted">${message.time}</p>
